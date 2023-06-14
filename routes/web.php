@@ -4,6 +4,7 @@ use App\Models\History;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RegisterController;
 use GuzzleHttp\Middleware;
 
@@ -30,11 +31,14 @@ Route::get('/news', function () {
     ]);
 });
 
-Route::get('/order', function () {
-    return view('order.order', [
-        "title" => "Pesan"
-    ]);
-})->middleware('auth');
+// Route::get('/order', function () {
+//     return view('order.order', [
+//         "title" => "Pesan"
+//     ]);
+// })->middleware('auth');
+
+Route::get('/order', [OrderController::class, 'index']);
+Route::post('/order', [OrderController::class, 'store']);
 
 Route::get('payment', function () {
     return view('order.payment', [

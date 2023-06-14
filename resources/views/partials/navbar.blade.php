@@ -17,7 +17,7 @@
               <a class="nav-link" href="/news">Berita</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/order">Pesan</a>
+              <a class="nav-link" href={{ url("/order") }}>Pesan</a>
             </li>
             <li class="nav-item">
               <a id="order-histories" class="nav-link" href="/histories">Cek Pesanan</a>
@@ -57,7 +57,7 @@
               </li>
             @endauth
           </ul>
-          
+
         </div>
     </div>
 </nav>
