@@ -1,0 +1,63 @@
+#order-histories {
+    margin-right: 24px;
+}
+
+#login {
+    margin-left: 6px;
+}
+
+#register {
+    margin-left: 6px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#carouselExampleIndicators {
+    padding-top: 5rem;
+    margin-top: 20px;
+}
+
+.registration-cta {
+    margin: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50px;
+}
+
+.registration-cta .container {
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* notif order */
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+/* end notif */
