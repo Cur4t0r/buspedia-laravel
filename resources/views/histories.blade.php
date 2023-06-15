@@ -14,15 +14,15 @@
         </tr>
       </thead>
       <tbody>
-        @foreach ($histories as $history)
+        @foreach ($histories as $order)
         <tr>
-          <td>{{ $history->id }}</td>
+          <td>{{ auth()->$order()->id }}</td>
           <td>
-            <a href="/histories/{{ $history->slug }}" class="text-dark text-decoration-none"><strong> {{ $history->name }} </strong></a>
+            <a href="/histories/{{ $history->slug }}" class="text-dark text-decoration-none"><strong> {{ auth()->$order()->name }} </strong></a>
           </td>
-          <td>{{ $history->start }}</td>
-          <td>{{ $history->finish }}</td>
-          <td class="text-center">{{ $history->total_seat }}</td>
+          <td>{{ auth()->$order()->start }}</td>
+          <td>{{ auth()->$order()->finish }}</td>
+          <td class="text-center">{{ auth()->$order()->total_seat }}</td>
         </tr>
         @endforeach
       </tbody>  

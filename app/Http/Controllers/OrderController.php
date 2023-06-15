@@ -14,7 +14,9 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return view('order.order');
+        return view("order.order", [
+            "title" => "Pesan"
+        ]);
     }
 
     /**
@@ -36,13 +38,13 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nama' => 'required',
-            'asal' => 'required',
-            'tujuan' => 'required',
-            'tanggal' => 'required',
-            'jam' => 'required',
+            'name' => 'required',
+            'start' => 'required',
+            'finish' => 'required',
+            'date' => 'required',
+            'time' => 'required',
             'bus' => 'required',
-            'jumlah_kursi' => 'required|numeric',
+            'total_seat' => 'required|numeric',
         ], [
             // 'keterangan.required' => 'Keterangan harus diisi',
             // 'jumlah_uang.required' => 'Jumlah Uang harus diisi',
@@ -51,7 +53,7 @@ class OrderController extends Controller
         ]);
 
         Order::create($validated);
-        redirect('/order');
+        return redirect('/payment');
     }
 
     /**
@@ -60,11 +62,6 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function show(Order $order)
-    {
-        //
-    }
-
     /**
      * Show the form for editing the specified resource.
      *

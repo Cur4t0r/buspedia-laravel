@@ -15,13 +15,14 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('asal');
-            $table->string('tujuan');
-            $table->date('tanggal');
-            $table->time('jam');
+            $table->foreignId('user_id')->unique();
+            $table->string('name');
+            $table->string('start');
+            $table->string('finish');
+            $table->date('date');
+            $table->time('time');
             $table->string('bus');
-            $table->integer('jumlah_kursi');
+            $table->integer('total_seat');
             $table->timestamps();
         });
     }

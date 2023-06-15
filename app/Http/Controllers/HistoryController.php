@@ -4,14 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\History;
+use App\Models\Order;
 
 class HistoryController extends Controller
 {
     public function index()
     {
-        return view('histories', [
+        $histories = Order::all();
+        return view('histories', compact('histories'),
+        [
             "title" => "Cek Pesanan",
-            "histories" => History::latest()->paginate(1)
+            "histories" => History::latest()->paginate(10)
         ]);
     }
 

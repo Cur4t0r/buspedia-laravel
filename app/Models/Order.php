@@ -8,14 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $fillable = [
-        'nama',
-        'asal',
-        'tujuan',
-        'tanggal',
-        'jam',
+        'name',
+        'start',
+        'finish',
+        'date',
+        'time',
         'bus',
-        'jumlah_kursi'
+        'total_seat'
     ];
 
     use HasFactory;
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
