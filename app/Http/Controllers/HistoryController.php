@@ -20,7 +20,6 @@ class HistoryController extends Controller
 
     public function show(History $history)
     {
-        $history = Order::first();
         return view('history',
         [
             "title" => "Detail Pesanan",
