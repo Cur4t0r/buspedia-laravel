@@ -9,10 +9,15 @@
             </a>
           </li>
           <li class="nav-item">
+            <a data-toggle="collapse" href="/dashboard" class="collapsed" aria-expanded="false">
+              <i class="fas fa-user-circle"></i>
+              <p>Profil</p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a data-toggle="collapse" href="#forms">
               <i class="fas fa-pen-square"></i>
               <p>Pesanan</p>
-              <span class="caret"></span>
             </a>
           </li>
           <li class="nav-section">
@@ -22,29 +27,8 @@
           </li>
           <li class="nav-item">
             <a data-toggle="collapse" href="#base">
-              <i class="fas fa-layer-group"></i>
-              <p>Base</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-toggle="collapse" href="#sidebarLayouts">
-              <i class="fas fa-th-list"></i>
-              <p>Sidebar Layouts</p>
-              <span class="caret"></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-toggle="collapse" href="#forms">
-              <i class="fas fa-pen-square"></i>
-              <p>Forms</p>
-              <span class="caret"></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-toggle="collapse" href="#tables">
-              <i class="fas fa-table"></i>
-              <p>Tables</p>
-              <span class="caret"></span>
+              <i class="fas fa-wrench"></i>
+              <p>Pengaturan Akun</p>
             </a>
           </li>
         </ul>

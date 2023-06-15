@@ -14,13 +14,15 @@ class HistoryController extends Controller
         return view('histories', compact('histories'),
         [
             "title" => "Cek Pesanan",
-            "histories" => History::latest()->paginate(10)
+            "histories" => History::latest()
         ]);
     }
 
     public function show(History $history)
     {
-        return view('history', [
+        $history = Order::first();
+        return view('history',
+        [
             "title" => "Detail Pesanan",
             "history" => $history
         ]);

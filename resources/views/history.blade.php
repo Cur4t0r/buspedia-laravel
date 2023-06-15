@@ -13,8 +13,8 @@
                 <p class="card-text">Asal : {{ $history->start }}</p>
                 <p class="card-text">Tujuan : {{ $history->finish }} </p>
                 <p class="card-text">Jumlah Kursi : {{ $history->total_seat }}</p>
-                <p class="card-text">Tanggal keberangkatan : - </p>
-                <p class="card-text">Jam keberangkatan : - </p>
+                <p class="card-text">Tanggal keberangkatan : {{ $history->date }} </p>
+                <p class="card-text">Jam keberangkatan : {{ $history->time }} </p>
             </div>
         </div>
     </div>

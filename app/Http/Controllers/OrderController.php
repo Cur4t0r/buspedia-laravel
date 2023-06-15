@@ -56,6 +56,14 @@ class OrderController extends Controller
         return redirect('/payment');
     }
 
+    public function show(Order $order)
+    {
+        return view('order.show', [
+            'title' => 'Detail Pesanan',
+            'order' => $order
+        ]);
+    }
+
     /**
      * Display the specified resource.
      *
@@ -70,7 +78,10 @@ class OrderController extends Controller
      */
     public function edit(Order $order)
     {
-        //
+        return view('order.edit', [
+            'title' => 'Edit Pesanan',
+            'order' => $order
+        ]);
     }
 
     /**
@@ -82,8 +93,21 @@ class OrderController extends Controller
      */
     public function update(Request $request, Order $order)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required',
+            'start' => 'required',
+            'finish' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+            'bus' => 'required',
+            'total_seat' => 'required|numeric',
+        ]);
+
+        $order->update($validated);
+
+        return redirect('/order/'.$order->id);
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -93,6 +117,7 @@ class OrderController extends Controller
      */
     public function destroy(Order $order)
     {
-        //
+        $order->delete();
+        return redirect('order');
     }
 }

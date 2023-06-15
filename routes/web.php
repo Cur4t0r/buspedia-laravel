@@ -49,7 +49,7 @@ Route::get('payment', function () {
 // History banyak
 Route::get('/histories', [HistoryController::class, 'index'])->middleware('auth');
 // Salah satu history saja
-Route::get('/histories/{history:slug}', [HistoryController::class, 'show']);
+Route::get('/histories/history', [HistoryController::class, 'show']);
 
 // Auth Route
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

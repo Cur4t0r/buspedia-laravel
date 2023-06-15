@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    use HasFactory;
+    
     protected $fillable = [
         'name',
         'start',
@@ -17,7 +19,7 @@ class Order extends Model
         'total_seat'
     ];
 
-    use HasFactory;
+    
 
     public function user()
     {

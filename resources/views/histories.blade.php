@@ -11,24 +11,27 @@
           <th>Awal</th>
           <th>Tujuan</th>
           <th class="text-center">Jumlah Kursi</th>
+          <th>Tanggal</th>
+          <th>Jam</th>
         </tr>
       </thead>
       <tbody>
-        @foreach ($histories as $order)
+        @foreach ($histories as $history)
         <tr>
-          <td>{{ auth()->$order()->id }}</td>
+          <td>{{ $history->id }}</td>
           <td>
-            <a href="/histories/{{ $history->slug }}" class="text-dark text-decoration-none"><strong> {{ auth()->$order()->name }} </strong></a>
+            <a href="/histories/history" class="text-dark text-decoration-none"><strong> {{ $history->name }} </strong></a>
           </td>
-          <td>{{ auth()->$order()->start }}</td>
-          <td>{{ auth()->$order()->finish }}</td>
-          <td class="text-center">{{ auth()->$order()->total_seat }}</td>
+          <td>{{ $history->start }}</td>
+          <td>{{ $history->finish }}</td>
+          <td class="text-center">{{ $history->total_seat }}</td>
+          <td>{{ $history->date }}</td>
+          <td>{{ $history->time }}</td>
         </tr>
         @endforeach
       </tbody>  
     </table>
     <div class="d-flex justify-content-end">
-      {{ $histories->links() }}
     </div>
   </div>
 @endsection
