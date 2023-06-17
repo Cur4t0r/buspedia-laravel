@@ -8,9 +8,9 @@
         <div class="card">
           <div class="card-body">
             <div class="text-center mb-4">
-              <img src="qris.jpg" alt="qris" class="img-fluid" style="width: 70%">
             </div>
-            <p class="text-center">Scan QR Code untuk melakukan pembayaran</p>
+            <p class="text-center">Terima kasih atas pesanan Anda. Kami ingin mengonfirmasi bahwa transaksi tersebut telah diselesaikan.
+            </p>
             <div class="text-center mt-4">
               <button class="btn btn-outline-dark bg-dark mr-3"><a href="/histories" class="text-decoration-none text-white">Konfirmasi Pembayaran</a></button>
             </div>
@@ -20,6 +20,3 @@
     </div>
 </div>
 @endsection
-
-
-  

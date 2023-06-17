@@ -6,10 +6,11 @@
     <table class="table">
       <thead>
         <tr>
-          <th>Order ID</th>
+          <th class="text-center col-md-1">Order ID</th>
           <th>Nama Pemesan</th>
           <th>Awal</th>
           <th>Tujuan</th>
+          <th>Bus</th>
           <th class="text-center">Jumlah Kursi</th>
           <th>Tanggal</th>
           <th>Jam</th>
@@ -18,12 +19,13 @@
       <tbody>
         @foreach ($histories as $history)
         <tr>
-          <td>{{ $history->id }}</td>
+          <td class="text-center col-md-1">{{ $history->id }}</td>
           <td>
-            <a href="/histories/history" class="text-dark text-decoration-none"><strong> {{ $history->name }} </strong></a>
+            <strong> {{ $history->name }} </strong>
           </td>
           <td>{{ $history->start }}</td>
           <td>{{ $history->finish }}</td>
+          <td>{{ $history->bus }}</td>
           <td class="text-center">{{ $history->total_seat }}</td>
           <td>{{ $history->date }}</td>
           <td>{{ $history->time }}</td>

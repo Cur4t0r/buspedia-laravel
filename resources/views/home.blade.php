@@ -13,22 +13,19 @@
     <div class="carousel-item active">
       <img src="img/slide1.jpg" class="d-block w-100" alt="Slide 1" style="height: 550px">
       <div class="carousel-caption">
-        <h5>Slide pertama ges</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsum accusamus aperiam, aliquam iste consequuntur!</p>
+        <p>Kami berfokus pada pengembangan kemitraan dengan agen perjalanan dan mitra bisnis lainnya guna memperluas jangkauan pemasaran dan meningkatkan penjualan tiket bus.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="img/slide2.jpg" class="d-block w-100" alt="Slide 2" style="height: 550px">
       <div class="carousel-caption">
-        <h5>Slide kedua ges</h5>
-        <p><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores nihil quas, voluptate dolores cumque a.</strong></p>
+        <p>Perjalanan jarak jauh dengan bus sering kali menjadi pilihan bagi wisatawan budget yang ingin menjelajahi berbagai tempat dengan biaya yang lebih terjangkau.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="img/slide3.jpg" class="d-block w-100" alt="Slide 3" style="height: 550px">
       <div class="carousel-caption">
-        <h5>Slide ketiga ges</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae nemo asperiores reprehenderit itaque doloribus.</p>
+        <p>Kami menyediakan layanan transportasi umum yang penting dalam menghubungkan berbagai bagian kota dan memudahkan mobilitas penduduk.</p>
       </div>
     </div>
   </div>
@@ -55,49 +52,49 @@
     <div class="row">
       <div class="col-md-2 mb-3">
         <div class="card">
-          <a href="/"><img src="img/card1.jpg" class="d-block w-100 card-img-top" alt="card1" style="height: 120px"></a>
+          <a href="/order"><img src="img/card1.jpg" class="d-block w-100 card-img-top" alt="card1" style="height: 120px"></a>
           <div class="card-body">
-            <p class="card-text"><a href="/" class="text-dark text-decoration-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quas!.</a></p>
+            <p class="card-text"><a href="/order" class="text-dark text-decoration-none">PO Fajar Riau Wisata</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-2 mb-3">
         <div class="card">
-          <a href="/"><img src="img/card2.jpg" class="d-block w-100 card-img-top" alt="card2" style="height: 120px"></a>
+          <a href="/order"><img src="img/card2.jpg" class="d-block w-100 card-img-top" alt="card2" style="height: 120px"></a>
           <div class="card-body">
-            <p class="card-text"><a href="/" class="text-dark text-decoration-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quas!.</a></p>
+            <p class="card-text"><a href="/order" class="text-dark text-decoration-none">PO Handoyo</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-2 mb-3">
         <div class="card">
-          <a href="/"><img src="img/card3.jpg" class="d-block w-100 card-img-top" alt="card3" style="height: 120px"></a>
+          <a href="/order"><img src="img/card3.jpg" class="d-block w-100 card-img-top" alt="card3" style="height: 120px"></a>
           <div class="card-body">
-            <p class="card-text"><a href="/" class="text-dark text-decoration-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quas!.</a></p>
+            <p class="card-text"><a href="/order" class="text-dark text-decoration-none">PO SAN</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-2 mb-3">
         <div class="card">
-          <a href="/"><img src="img/card4.jpg" class="d-block w-100 card-img-top" alt="card4" style="height: 120px"></a>
+          <a href="/order"><img src="img/card4.jpg" class="d-block w-100 card-img-top" alt="card4" style="height: 120px"></a>
           <div class="card-body">
-            <p class="card-text"><a href="/" class="text-dark text-decoration-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quas!.</a></p>
+            <p class="card-text"><a href="/order" class="text-dark text-decoration-none">PO Bintang Utara</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-2 mb-3">
         <div class="card">
-          <a href="/"><img src="img/card5.jpg" class="d-block w-100 card-img-top" alt="card5" style="height: 120px"></a>
+          <a href="/order"><img src="img/card5.jpg" class="d-block w-100 card-img-top" alt="card5" style="height: 120px"></a>
           <div class="card-body">
-            <p class="card-text"><a href="/" class="text-dark text-decoration-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quas!.</a></p>
+            <p class="card-text"><a href="/order" class="text-dark text-decoration-none">PO Putra Pelangi</a></p>
           </div>
         </div>
       </div>
       <div class="col-md-2 mb-3">
         <div class="card">
-          <a href="/"><img src="img/card6.jpg" class="d-block w-100 card-img-top" alt="card6" style="height: 120px"></a>
+          <a href="/order"><img src="img/card6.jpg" class="d-block w-100 card-img-top" alt="card6" style="height: 120px"></a>
           <div class="card-body">
-            <p class="card-text"><a href="/" class="text-dark text-decoration-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quas!.</a></p>
+            <p class="card-text"><a href="/order" class="text-dark text-decoration-none">PO NPM</a></p>
           </div>
         </div>
       </div>

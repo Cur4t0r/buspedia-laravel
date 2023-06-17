@@ -1,5 +1,5 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <h1>Welcome</h1>
+    <h1>Profile</h1>
 @endsection

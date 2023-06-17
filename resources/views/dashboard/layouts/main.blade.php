@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/atlantis.min.css" />
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="/assets/css/demo.css" />
   </head>
   <body data-background-color="dark">
     <div class="wrapper">
@@ -60,17 +58,10 @@
     <!-- jQuery Scrollbar -->
     <script src="/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
-    <!-- Datatables -->
-    <script src="/assets/js/plugin/datatables/datatables.min.js"></script>
-
     <!-- Bootstrap Notify -->
     <script src="/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
     <!-- Atlantis JS -->
     <script src="/assets/js/atlantis.min.js"></script>
-
-    <!-- Atlantis DEMO methods, don't include it in your project! -->
-    <script src="/assets/js/setting-demo.js"></script>
-    <script src="/assets/js/demo.js"></script>
   </body>
 </html>

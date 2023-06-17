@@ -14,9 +14,6 @@
               <a class="nav-link" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/news">Berita</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href={{ url("/order") }}>Pesan</a>
             </li>
             <li class="nav-item">

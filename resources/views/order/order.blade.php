@@ -3,7 +3,7 @@
 @section('container')
 <div class="container" style="margin-top: 100px">
   <h1>Pesan Tiket</h1>
-  <form action="/order" method="post">
+  <form action="/order" method="post" id="orderForm">
     @csrf
       <div class="mb-3">
         <label for="name" class="form-label">Nama</label>
@@ -72,7 +72,48 @@
         </div>
       </div>
       {{-- END row bus name & capacity --}}
-      <button type="submit" class="btn btn-dark">Pesan</button>
+      <button type="submit" class="btn btn-dark" id="submitButton">Pesan</button>
   </form>
 </div>
+<script>
+  document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Mencegah pengiriman form secara default
+      confirmData(); // Panggil fungsi untuk konfirmasi data
+    });
+
+    function confirmData() {
+      var name = document.getElementById("name").value;
+      var start = document.getElementById("start").value;
+      var finish = document.getElementById("finish").value;
+      var date = document.getElementById("date").value;
+      var time = document.getElementById("time").value;
+      var bus = document.getElementById("bus").value;
+      var totalSeat = document.getElementById("jumlah").value;
+
+      // Konfirmasi data pesanan menggunakan SweetAlert
+      Swal.fire({
+        title: "Konfirmasi Pesanan",
+        html:
+          "<strong>Nama:</strong> " + name + "<br>" +
+          "<strong>Titik Keberangkatan:</strong> " + start + "<br>" +
+          "<strong>Tujuan Keberangkatan:</strong> " + finish + "<br>" +
+          "<strong>Tanggal:</strong> " + date + "<br>" +
+          "<strong>Jam:</strong> " + time + "<br>" +
+          "<strong>Pilih Bus:</strong> " + bus + "<br>" +
+          "<strong>Jumlah Kursi:</strong> " + totalSeat,
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonText: "Pesan",
+        cancelButtonText: "Batal",
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Jika pengguna mengkonfirmasi pesanan, submit form
+          document.getElementById("orderForm").submit();
+        } else {
+          // Jika pengguna membatalkan pesanan, tidak melakukan apa-apa
+        }
+      });
+    }
+</script>
 @endsection

@@ -9,13 +9,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a data-toggle="collapse" href="/dashboard" class="collapsed" aria-expanded="false">
+            <a data-toggle="collapse" href="/profile" class="collapsed" aria-expanded="false">
               <i class="fas fa-user-circle"></i>
               <p>Profil</p>
             </a>
           </li>
           <li class="nav-item">
-            <a data-toggle="collapse" href="#forms">
+            <a data-toggle="collapse" href="/dashboard/history">
               <i class="fas fa-pen-square"></i>
               <p>Pesanan</p>
             </a>
@@ -26,7 +26,7 @@
             </span>
           </li>
           <li class="nav-item">
-            <a data-toggle="collapse" href="#base">
+            <a data-toggle="collapse" href="/settings">
               <i class="fas fa-wrench"></i>
               <p>Pengaturan Akun</p>
             </a>

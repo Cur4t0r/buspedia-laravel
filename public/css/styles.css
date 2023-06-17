@@ -37,27 +37,5 @@ footer {
 }
 
 /* notif order */
-.notification {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    transition: opacity 0.3s ease;
-}
 
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.visible {
-    opacity: 1;
-    visibility: visible;
-}
 /* end notif */
